@@ -1,3 +1,6 @@
+
+import java.util.*;
+
 public class FirstFile {
 
     public static int pow(int a , int b){
@@ -7,6 +10,7 @@ public class FirstFile {
       return a*pow(a,b-1);
     }
     public static void main(String[] args) {
-        System.out.println(pow(5,5));
+      Scanner sc  = new Scanner(System.in);
+        System.out.println(pow(sc.nextInt(),sc.nextInt()));
     }
 }
